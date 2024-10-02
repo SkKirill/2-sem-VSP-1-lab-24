@@ -1,8 +1,8 @@
 object Form1: TForm1
   Left = 134
   Top = 136
-  Width = 359
-  Height = 130
+  Width = 343
+  Height = 128
   Caption = 'Form1'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -13,31 +13,31 @@ object Form1: TForm1
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
-  object lbl_output: TLabel
-    Left = 24
-    Top = 56
+  object lblAnswer: TLabel
+    Left = 8
+    Top = 48
     Width = 43
     Height = 13
     Caption = 'Answer: '
   end
-  object edt_input: TEdit
-    Left = 24
-    Top = 24
+  object edtInput: TEdit
+    Left = 8
+    Top = 8
     Width = 217
     Height = 21
     TabOrder = 0
   end
-  object btn_action: TButton
-    Left = 248
-    Top = 24
+  object btnRun: TButton
+    Left = 232
+    Top = 8
     Width = 75
-    Height = 25
-    Caption = 'Enter to run'
+    Height = 33
+    Caption = 'Press to run'
     TabOrder = 1
-    OnClick = btn_actionClick
+    OnClick = btnRunClick
   end
-  object btn_Clear: TButton
-    Left = 248
+  object btnClear: TButton
+    Left = 232
     Top = 56
     Width = 75
     Height = 25

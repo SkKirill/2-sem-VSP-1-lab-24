@@ -8,12 +8,12 @@ uses
 
 type
   TForm1 = class(TForm)
-    edt_input: TEdit;
-    lbl_output: TLabel;
-    btn_action: TButton;
-    btn_Clear: TButton;
+    edtInput: TEdit;
+    lblAnswer: TLabel;
+    btnRun: TButton;
+    btnClear: TButton;
     procedure ClickClear(Sender: TObject);
-    procedure btn_actionClick(Sender: TObject);
+    procedure btnRunClick(Sender: TObject);
   end;
 
 var
@@ -25,17 +25,17 @@ implementation
 
 procedure TForm1.ClickClear(Sender: TObject);
 begin
-  edt_input.Clear;
-  lbl_output.Caption := 'Answer: ';
+  edtInput.Clear;
+  lblAnswer.Caption := 'Answer: ';
 end;
 
-procedure TForm1.btn_actionClick(Sender: TObject);
+procedure TForm1.btnRunClick(Sender: TObject);
 var
   i, count: Integer;
   words, word, UpperWords: string;
   SetForWord : set of Char;
 begin
-  words := edt_input.Text + ' ';
+  words := edtInput.Text + ' ';
   UpperWords := AnsiUpperCase(words);
   word := '';
   count := 0;
@@ -45,7 +45,7 @@ begin
       if words[i] = ' ' then
         begin
           if (word <> '') and (count > 2)
-            then lbl_output.Caption := lbl_output.Caption + word + ' ';
+            then lblAnswer.Caption := lblAnswer.Caption + word + ' ';
           count := 0;
           word := '';
           SetForWord := [];
