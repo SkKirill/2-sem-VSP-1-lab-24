@@ -14,10 +14,6 @@ type
     btn_Clear: TButton;
     procedure ClickClear(Sender: TObject);
     procedure btn_actionClick(Sender: TObject);
-  private
-    { Private declarations }
-  public
-    { Public declarations }
   end;
 
 var

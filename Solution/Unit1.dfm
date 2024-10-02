@@ -32,7 +32,7 @@ object Form1: TForm1
     Top = 24
     Width = 75
     Height = 25
-    Caption = 'Input'
+    Caption = 'Enter to run'
     TabOrder = 1
     OnClick = btn_actionClick
   end
